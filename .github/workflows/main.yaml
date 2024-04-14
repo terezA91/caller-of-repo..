@@ -1,1 +1,10 @@
+name: Caller workflow
 
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    docker:
+        uses  : terezA91/repo../.github/workflows/main.yaml@main
